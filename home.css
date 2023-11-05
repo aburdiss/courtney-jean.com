@@ -1,0 +1,18 @@
+header .Inner-Content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  align-items: center;
+}
+.Logo {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: black;
+}
+header ul {
+  margin: 0;
+  list-style: none;
+}
+header ul a {
+  color: black;
+}

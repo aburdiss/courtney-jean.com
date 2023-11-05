@@ -17,3 +17,18 @@
   box-sizing: border-box;
   font-family: 'OpenSans', sans-serif;
 }
+
+body {
+  background-color: #fdfdfd;
+}
+
+main {
+  padding-bottom: 1rem;
+}
+
+.Inner-Content {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0rem 1rem;
+}
