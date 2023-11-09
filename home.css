@@ -1,18 +1,23 @@
-header .Inner-Content {
+.Gallery {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 1rem;
-  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
-.Logo {
-  font-size: 1.4rem;
-  text-decoration: none;
-  color: black;
+
+@media (min-width: 800px) {
+  .Gallery {
+    justify-content: flex-end;
+  }
 }
-header ul {
-  margin: 0;
-  list-style: none;
+
+.Gallery img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
 }
-header ul a {
-  color: black;
+
+.More-Container {
+  padding-top: 4rem;
+  text-align: end;
 }

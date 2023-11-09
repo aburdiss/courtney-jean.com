@@ -19,16 +19,94 @@
 }
 
 body {
-  background-color: #fdfdfd;
+  background-color: #909090;
 }
 
-main {
+header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+  header {
+    width: 200px;
+    flex-shrink: 0;
+  }
+}
+
+.Logo {
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 2rem;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header ul li {
   padding-bottom: 1rem;
 }
 
+h1 {
+  margin: 0;
+}
+
 .Inner-Content {
+  background-color: #f6f6f6;
   max-width: 1200px;
   width: 100%;
-  margin: auto;
-  padding: 0rem 1rem;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+@media (min-width: 1200px) {
+  .Inner-Content {
+    border-radius: 4px;
+    padding: 4rem;
+  }
+}
+.Inner-Content p:first-of-type {
+  margin-top: 0;
+}
+.Inner-Content p:last-of-type {
+  margin-bottom: 0;
+}
+
+.Main-Content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 800px) {
+  .Main-Content {
+    flex-direction: row;
+    padding-bottom: 4rem;
+  }
+}
+
+a {
+  color: #303030;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  color: #505050;
+}
+
+.Button {
+  background-color: #303030;
+  color: white;
+  padding: 1rem 3rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+.Button:hover, .Button:focus {
+  background-color: #505050;
+  color: white;
 }
