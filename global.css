@@ -51,20 +51,42 @@ header ul li {
   padding-bottom: 1rem;
 }
 
+@media (min-width: 800px) {
+  main {
+    padding-left: 4rem;
+  }
+}
+
 h1 {
-  margin: 0;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
 }
 
 .Inner-Content {
   background-color: #f6f6f6;
-  max-width: 1200px;
+  max-width: calc(100% - 2rem);
   width: 100%;
-  margin: 3rem auto;
+  margin: 1rem;
   padding: 2rem;
+  border-radius: 4px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 450px) {
   .Inner-Content {
-    border-radius: 4px;
+    max-width: min(1200px, calc(100% - 4rem));
+    margin: 2rem;
+  }
+}
+@media (min-width: 1268px) {
+  .Inner-Content {
+    margin: 4rem auto;
     padding: 4rem;
   }
 }
@@ -94,7 +116,8 @@ a {
   color: #303030;
   transition: color 0.2s;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #505050;
 }
 
@@ -106,7 +129,8 @@ a:hover, a:focus {
   border-radius: 4px;
   transition: background-color 0.2s;
 }
-.Button:hover, .Button:focus {
+.Button:hover,
+.Button:focus {
   background-color: #505050;
   color: white;
 }
