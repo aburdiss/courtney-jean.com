@@ -18,6 +18,10 @@
   font-family: 'OpenSans', sans-serif;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 body {
   background-color: #909090;
 }
